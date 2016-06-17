@@ -1,0 +1,24 @@
+{
+  "name": "star_wars_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "star_wars.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christian-mansour/star_wars_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christian-mansour/star_wars_api/issues"
+  },
+  "homepage": "https://github.com/christian-mansour/star_wars_api#readme",
+  "dependencies": {
+    "open": "0.0.5",
+    "prompt": "^1.0.0",
+    "request": "^2.72.0"
+  }
+}
