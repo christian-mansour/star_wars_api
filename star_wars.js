@@ -12,9 +12,24 @@ console.log("Welcome to the ultimate Star Wars experience! We are about to take 
   prompt.get(['characterName'], function(err, result) {
     console.log('You picked ' + result.characterName + '!');
     console.log('Here are some giphy\'s with that character.  Pick one!');
+    request('http://api.giphy.com/v1/gifs/search?q=' + result.characterName.toLowerCase() + 's&api_key=dc6zaTOxFJmzC', function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+          response = JSON.parse(body);
+          console.log(response);
+        }
+      });
   });
 
 //   * CLI makes a simple call to *X* API using the user input
+
+    // Find Giphy URL for Star Wars giphys
+
+      // request('http://api.giphy.com/v1/gifs/search?q=star+wars&api_key=dc6zaTOxFJmzC', function (error, response, body) {
+      //   if (!error && response.statusCode == 200) {
+      //     response = JSON.parse(body);
+      //     console.log(response);
+      //   }
+      // });
 
 
 
