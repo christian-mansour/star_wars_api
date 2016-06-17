@@ -25,14 +25,11 @@ console.log(charArray.toString());
           // console.log(responseArr[0].url);
           open(responseArr[0].url);
         }
+        setTimeout(function themeSong(){
+          open('https://www.youtube.com/watch?v=ZXQha5X81RA');
+          }, 3000)
       });
   });
-
-  setTimeout(function themeSong(){
-
-      open('https://www.youtube.com/watch?v=ZXQha5X81RA');
-
-  }, 10000)
 
 
 
