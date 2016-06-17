@@ -28,6 +28,12 @@ console.log(charArray.toString());
       });
   });
 
+  setTimeout(function themeSong(){
+
+      open('https://www.youtube.com/watch?v=ZXQha5X81RA');
+
+  }, 10000)
+
 
 
 
